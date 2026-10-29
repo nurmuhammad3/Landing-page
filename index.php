@@ -1,3 +1,4 @@
+<?php $year = date('Y'); ?>
 <!doctype html>
 <html lang="bn">
 <head>
@@ -63,13 +64,12 @@
     <section class="testimonial"><div class="container quote-wrap"><div class="quote-mark">“</div><blockquote>ক্যাম্পেইন শুরু করার মাত্র কয়েক মাসের মধ্যে আমরা এমন লিড পেয়েছি যা আগে কল্পনাও করিনি। পুরো প্রক্রিয়াটাই ছিল স্বচ্ছ ও সহজ।</blockquote><div class="client"><span class="client-pic">ন</span><div class="client-meta"><strong>নুসরাত জাহান</strong><span>প্রতিষ্ঠাতা, Bloom Boutique</span></div></div></div></section>
     <section class="contact" id="contact"><div class="container"><div class="contact-box"><div><span class="eyebrow">আপনার পরবর্তী ধাপ</span><h2>আপনার ব্যবসাকে আরও এগিয়ে নিতে প্রস্তুত?</h2><p>চলুন, আপনার লক্ষ্য নিয়ে কথা বলি। আমার Facebook প্রোফাইল থেকে মেসেজ পাঠান।</p></div><a class="button" href="https://www.facebook.com/share/1EGGZA71Ft/" target="_blank" rel="noopener noreferrer">Facebook-এ যোগাযোগ <span>↗</span></a></div></div></section>
   </main>
-  <footer><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">↗</span><span>Nur Muhammad<span style="color:var(--green)">.</span></span></a><span>© <span id="year"></span> Nur Muhammad। সর্বস্বত্ব সংরক্ষিত।</span><div class="socials"><a href="https://www.facebook.com/share/1EGGZA71Ft/" target="_blank" rel="noopener noreferrer">Facebook</a></div></div></footer>
+  <footer><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">↗</span><span>Nur Muhammad<span style="color:var(--green)">.</span></span></a><span>© <?= $year ?> Nur Muhammad। সর্বস্বত্ব সংরক্ষিত।</span><div class="socials"><a href="https://www.facebook.com/share/1EGGZA71Ft/" target="_blank" rel="noopener noreferrer">Facebook</a></div></div></footer>
   <script>
     const toggle=document.querySelector('.menu-toggle');
     const links=document.querySelector('.nav-links');
     toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'মেনু বন্ধ করুন':'মেনু খুলুন');});
     links.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));
-    document.getElementById('year').textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
