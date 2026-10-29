@@ -9,4 +9,9 @@ if ($path === '/dashboard' || $path === '/dashboard/') {
     exit;
 }
 
+if ($path === '/blog' || $path === '/blog/' || $path === '/blog/digital-marketing-basics') {
+    require dirname(__DIR__) . '/blog.php';
+    exit;
+}
+
 require dirname(__DIR__) . '/index.php';
