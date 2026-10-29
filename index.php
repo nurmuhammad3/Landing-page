@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#171344">
   <meta name="description" content="Nur Muhammad — Digital Marketer. Social media, paid ads, SEO and marketing strategy.">
+  <meta name="google-site-verification" content="9vI9modDapxrg4sx0whH3TGMuT0UoNbzF_hH6bkyIS4">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://landing-page-nur-811a.vercel.app/">
   <meta property="og:type" content="website">
