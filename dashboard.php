@@ -23,7 +23,7 @@ $dateLabel = $today->format('F j, Y');
     @media(max-width:480px){.kpis{gap:9px}.kpi{padding:13px}.kpi-value{font-size:21px}.kpi-top{font-size:11px}.intro{display:block}.intro h1{font-size:28px}.range{margin-top:13px;width:max-content}.topbar{align-items:flex-start}.date-label{display:none}.top-actions{gap:6px}.button{padding:8px 9px}.panel{padding:14px}.legend{gap:8px}.table-panel .panel-head{padding:15px 14px 11px}.panel-title{font-size:14px}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
   </style>
-</head>
+<style>:root{--ink:#17152f;--muted:#64627a;--green:#6741d9;--green2:#8867f1;--lime:#bfff65;--cream:#f7f6fc;--pale:#f0ecff;--bg:#f7f6fc;--line:#e7e4f0;--white:#fff}body{background:#f7f6fc;color:#17152f}.nav-wrap{background:rgba(255,255,255,.95);border-bottom-color:#e7e4f0}.brand-mark{background:#6741d9}.eyebrow,.category,.crumb a,.read-link{color:#6741d9}.post,.cover{background:#fff;border-color:#e7e4f0}.post:hover{box-shadow:0 14px 35px #34236f14}.article h2{color:#211d3b}.article p,.article li,.intro{color:#55536e}.article-cta{background:linear-gradient(120deg,#181437,#2c2066);color:#fff}.article-cta p{color:#ddd9ed}.article-cta .button{background:#bfff65;color:#17152f}.article-cta .button:hover{background:#a6ee48}.sidebar{background:#fff;border-color:#e7e4f0}.side-nav a:hover{background:#f2efff;color:#6741d9}.side-nav a.active{background:#f0ecff;color:#6741d9}</style></head>
 <body>
   <div class="shell">
     <aside class="sidebar">
