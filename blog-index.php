@@ -43,7 +43,7 @@ foreach ($posts as $post) {
     <section class="posts" aria-label="Blog posts">
       <?php foreach ($cards as $card): ?>
         <article class="post">
-          <?php if (isset($card['slug'])): ?><img class="post-cover" src="<?= $escape('/blog/' . $card['slug'] . '/cover.svg') ?>" alt="<?= $escape($card['cover_alt']) ?>" width="1000" height="560" loading="lazy"><?php else: ?><div class="post-cover" aria-hidden="true" style="display:grid;place-items:center;color:#246b4b;font-size:52px">↗</div><?php endif; ?>
+          <?php if (isset($card['slug'])): ?><img class="post-cover" src="<?= $escape('/blog/' . $card['slug'] . '/cover.' . (isset($card['cover_file']) ? 'jpg' : 'svg')) ?>" alt="<?= $escape($card['cover_alt']) ?>" width="1000" height="560" loading="lazy"><?php else: ?><div class="post-cover" aria-hidden="true" style="display:grid;place-items:center;color:#246b4b;font-size:52px">↗</div><?php endif; ?>
           <div class="post-body"><span class="category" data-bn="<?= $escape($card['category_bn']) ?>" data-en="<?= $escape($card['category_en']) ?>"><?= $escape($card['category_bn']) ?></span><h2 data-bn="<?= $escape($card['title_bn']) ?>" data-en="<?= $escape($card['title_en']) ?>"><?= $escape($card['title_bn']) ?></h2><p data-bn="<?= $escape($card['description_bn']) ?>" data-en="<?= $escape($card['description_en']) ?>"><?= $escape($card['description_bn']) ?></p><a class="read-link" href="<?= $escape($card['url']) ?>"><span data-bn="পোস্ট পড়ুন" data-en="Read post">পোস্ট পড়ুন</span> ↗</a></div>
         </article>
       <?php endforeach; ?>

@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 $escape = static fn(string $value): string => htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $canonical = 'https://landing-page-nur-811a.vercel.app/blog/' . $article['slug'];
-$coverUrl = $canonical . '/cover.svg';
+$coverExtension = isset($article['cover_file']) ? 'jpg' : 'svg';
+$coverUrl = $canonical . '/cover.' . $coverExtension;
 $publishedAt = '2026-10-29T10:00:00+06:00';
 $structuredData = [
     '@context' => 'https://schema.org',
@@ -65,7 +66,7 @@ $jsonLd = json_encode($structuredData, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_S
     <span class="category" data-bn="<?= $escape($article['category_bn']) ?>" data-en="<?= $escape($article['category_en']) ?>"><?= $escape($article['category_bn']) ?></span>
     <h1 itemprop="headline" data-bn="<?= $escape($article['title_bn']) ?>" data-en="<?= $escape($article['title_en']) ?>"><?= $escape($article['title_bn']) ?></h1>
     <div class="meta"><span class="author-dot">N</span><span><strong itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Nur Muhammad</span></strong><br><span data-bn="প্রথম প্রকাশ: ২৯ অক্টোবর ২০২৬ · ৫ মিনিটে পড়ুন" data-en="Published: October 29, 2026 · 5 min read">প্রথম প্রকাশ: ২৯ অক্টোবর ২০২৬ · ৫ মিনিটে পড়ুন</span></span></div>
-    <figure class="cover"><img src="<?= $escape('/blog/' . $article['slug'] . '/cover.svg') ?>" alt="<?= $escape($article['cover_alt']) ?>" width="1000" height="560" fetchpriority="high"></figure>
+    <figure class="cover"><img src="<?= $escape('/blog/' . $article['slug'] . '/cover.' . $coverExtension) ?>" alt="<?= $escape($article['cover_alt']) ?>" width="1000" height="560" fetchpriority="high"></figure>
     <p class="intro" data-bn="<?= $escape($article['intro_bn']) ?>" data-en="<?= $escape($article['intro_en']) ?>"><?= $escape($article['intro_bn']) ?></p>
     <?php foreach ($article['sections'] as $section): ?>
       <section><h2 data-bn="<?= $escape($section['heading_bn']) ?>" data-en="<?= $escape($section['heading_en']) ?>"><?= $escape($section['heading_bn']) ?></h2><p data-bn="<?= $escape($section['body_bn']) ?>" data-en="<?= $escape($section['body_en']) ?>"><?= $escape($section['body_bn']) ?></p></section>
