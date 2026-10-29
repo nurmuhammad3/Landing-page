@@ -4,6 +4,101 @@ declare(strict_types=1);
 header('Content-Type: text/html; charset=utf-8');
 
 $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+$supabaseUrl = rtrim(trim((string) (getenv('SUPABASE_URL') ?: '')), '/');
+$supabaseAnonKey = trim((string) (getenv('SUPABASE_PUBLISHABLE_KEY') ?: getenv('SUPABASE_ANON_KEY') ?: ''));
+$GLOBALS['SUPABASE_PUBLIC_CONFIG'] = [
+    'url' => $supabaseUrl,
+    'anonKey' => $supabaseAnonKey,
+];
+
+if ($path === '/api/leads') {
+    header('Content-Type: application/json; charset=utf-8');
+    header('Cache-Control: no-store');
+
+    $respond = static function (int $status, array $payload): never {
+        http_response_code($status);
+        echo json_encode($payload, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+        exit;
+    };
+
+    if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST') {
+        header('Allow: POST');
+        $respond(405, ['error' => 'method_not_allowed']);
+    }
+
+    if ($supabaseUrl === '' || $supabaseAnonKey === '') {
+        $respond(503, ['error' => 'contact_form_not_configured']);
+    }
+
+    $rawBody = file_get_contents('php://input');
+    if (!is_string($rawBody) || strlen($rawBody) > 10000) {
+        $respond(413, ['error' => 'request_too_large']);
+    }
+
+    $input = json_decode($rawBody, true);
+    if (!is_array($input)) {
+        $respond(400, ['error' => 'invalid_request']);
+    }
+
+    // Quietly accept bot submissions to a hidden honeypot without storing them.
+    if (trim((string) ($input['website'] ?? '')) !== '') {
+        $respond(202, ['ok' => true]);
+    }
+
+    $name = trim((string) ($input['name'] ?? ''));
+    $email = strtolower(trim((string) ($input['email'] ?? '')));
+    $phone = trim((string) ($input['phone'] ?? ''));
+    $message = trim((string) ($input['message'] ?? ''));
+    $privacyConsent = ($input['privacy_consent'] ?? false) === true;
+
+    if ($name === '' || mb_strlen($name) > 120 || mb_strlen($message) < 10 || mb_strlen($message) > 3000) {
+        $respond(422, ['error' => 'invalid_fields']);
+    }
+    if ($email !== '' && (mb_strlen($email) > 254 || filter_var($email, FILTER_VALIDATE_EMAIL) === false)) {
+        $respond(422, ['error' => 'invalid_fields']);
+    }
+    if ($phone !== '' && (mb_strlen($phone) > 40 || preg_match('/^[+0-9() .-]+$/', $phone) !== 1)) {
+        $respond(422, ['error' => 'invalid_fields']);
+    }
+    if ($email === '' && $phone === '') {
+        $respond(422, ['error' => 'contact_required']);
+    }
+    if (!$privacyConsent) {
+        $respond(422, ['error' => 'consent_required']);
+    }
+
+    $payload = json_encode([
+        'name' => $name,
+        'email' => $email !== '' ? $email : null,
+        'phone' => $phone !== '' ? $phone : null,
+        'message' => $message,
+        'privacy_consent' => true,
+        'source' => 'website',
+    ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+    $context = stream_context_create([
+        'http' => [
+            'method' => 'POST',
+            // The API key selects the anon role. Do not send a publishable key as a Bearer JWT.
+            'header' => "apikey: {$supabaseAnonKey}\r\nContent-Type: application/json\r\nPrefer: return=minimal\r\n",
+            'content' => $payload,
+            'ignore_errors' => true,
+            'timeout' => 8,
+        ],
+    ]);
+
+    $response = @file_get_contents($supabaseUrl . '/rest/v1/website_leads', false, $context);
+    $statusLine = $http_response_header[0] ?? '';
+    preg_match('/\s([0-9]{3})\s/', $statusLine, $statusMatch);
+    $supabaseStatus = isset($statusMatch[1]) ? (int) $statusMatch[1] : 0;
+
+    if ($response === false || $supabaseStatus < 200 || $supabaseStatus >= 300) {
+        error_log('Supabase lead submission failed with HTTP ' . $supabaseStatus);
+        $respond(502, ['error' => 'submission_failed']);
+    }
+
+    $respond(201, ['ok' => true]);
+}
 
 if ($path === '/robots.txt') {
     header('Content-Type: text/plain; charset=utf-8');
