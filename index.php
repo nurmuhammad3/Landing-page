@@ -30,7 +30,7 @@
 <body>
   <div class="nav-wrap"><nav class="container" aria-label="প্রধান নেভিগেশন">
     <a class="brand" href="#home"><span class="brand-mark">↗</span><span>Nur Muhammad<span style="color:var(--green)">.</span></span></a>
-    <div class="nav-links" id="navLinks"><a href="#services">সার্ভিস</a><a href="#about">আমার সম্পর্কে</a><a href="#results">রেজাল্ট</a><a href="#process">কাজের প্রক্রিয়া</a></div>
+    <div class="nav-links" id="navLinks"><a href="#services">সার্ভিস</a><a href="#about">আমার সম্পর্কে</a><a href="#results">রেজাল্ট</a><a href="#process">কাজের প্রক্রিয়া</a><a href="/dashboard">ড্যাশবোর্ড</a></div>
     <a class="nav-cta" href="#contact">কথা বলি <span aria-hidden="true">↗</span></a>
     <button class="menu-toggle" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="navLinks">☰</button>
   </nav></div>
