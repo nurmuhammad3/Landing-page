@@ -137,6 +137,20 @@ if ($path === '/dashboard' || $path === '/dashboard/') {
     exit;
 }
 
+// The catch-all Vercel route sends asset requests through this router too.
+if (preg_match('~^/assets/(nur-muhammad(?:-personal-branding)?)\.jpg$~', $path, $matches) === 1) {
+    $assetPath = dirname(__DIR__) . '/assets/' . $matches[1] . '.jpg';
+    if (!is_file($assetPath)) {
+        http_response_code(404);
+        exit;
+    }
+    header('Content-Type: image/jpeg');
+    header('Cache-Control: public, max-age=86400');
+    header('X-Content-Type-Options: nosniff');
+    readfile($assetPath);
+    exit;
+}
+
 if (preg_match('~^/blog/([a-z0-9-]+)/cover\.(svg|jpg)$~', $path, $matches) === 1) {
     $posts = require dirname(__DIR__) . '/blog-data.php';
     $slug = $matches[1];
