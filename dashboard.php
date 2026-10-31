@@ -1,4 +1,9 @@
 <?php
+// Strip accidental credentials from pasted or autofilled dashboard URLs before rendering.
+if (isset($_GET['email']) || isset($_GET['password'])) {
+    header('Location: /dashboard', true, 303);
+    exit;
+}
 $config = $GLOBALS['SUPABASE_PUBLIC_CONFIG'] ?? ['url' => '', 'anonKey' => ''];
 $safeConfig = json_encode($config, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT);
 ?>
