@@ -29,7 +29,7 @@ $safeConfig = json_encode($config, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP |
       <h1>Sign in</h1><p class="muted">অনুমোদিত অ্যাকাউন্ট দিয়ে ব্যক্তিগত inquiry দেখুন।</p>
       <button class="button" id="googleLogin" type="button">Google দিয়ে Sign in করুন</button>
       <p class="muted">Dashboard admin account: annurmart2024@gmail.com</p><p class="error" id="loginError" aria-live="polite"></p>
-      <details><summary>ইমেইল ও পাসওয়ার্ড দিয়ে Sign in</summary><p class="muted">তথ্যগুলো নিচের ঘরে লিখে Sign in চাপুন। URL-এর শেষে ইমেইল/পাসওয়ার্ড লিখলে লগইন হবে না।</p><form id="loginForm"><label class="field">ইমেইল<input name="email" type="email" autocomplete="username" required></label><label class="field">পাসওয়ার্ড<input name="password" type="password" autocomplete="current-password" required></label><button class="button secondary" type="submit">Sign in</button></form></details>
+      <p class="muted">এই dashboard-এ email/password login নেই। উপরের Google button চাপুন এবং admin account বেছে নিন।</p>
     </section>
     <section id="inbox" class="hidden">
       <header class="intro"><h1>Contact inquiries</h1><p class="muted">ওয়েবসাইটের যোগাযোগ ফর্ম থেকে পাওয়া বার্তা।</p></header>
@@ -47,7 +47,7 @@ $safeConfig = json_encode($config, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP |
       const setup=document.getElementById('setup'),login=document.getElementById('login'),inbox=document.getElementById('inbox');
       const loginError=document.getElementById('loginError');
       const query=new URLSearchParams(location.search);
-      if(query.has('email')||query.has('password')){history.replaceState(null,'',location.pathname+location.hash);loginError.textContent='URL-এ দেওয়া তথ্য দিয়ে লগইন হয় না। নিচের form-এ তথ্য লিখুন; নিরাপত্তার জন্য exposed password বদলে নিন.'}
+      if(query.has('email')||query.has('password')){history.replaceState(null,'',location.pathname+location.hash);loginError.textContent='URL-এ দেওয়া তথ্য দিয়ে লগইন হয় না। Google button চাপুন; URL-এ password শেয়ার হয়ে থাকলে সেটি বদলে নিন.'}
       const oauthError=query.get('error_description')||new URLSearchParams(location.hash.slice(1)).get('error_description');
       if(oauthError){history.replaceState(null,'',location.pathname);loginError.textContent=`Google sign-in ব্যর্থ: ${oauthError}`}
       if(!config.url||!config.anonKey||!window.supabase){setup.classList.remove('hidden');setup.textContent='Supabase এখনও configure করা হয়নি। Project URL এবং publishable/anon key Vercel environment variables-এ যোগ করে redeploy করুন।';return}
@@ -78,7 +78,6 @@ $safeConfig = json_encode($config, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP |
       // cannot leave the visible buttons inert.
       const googleButton=document.getElementById('googleLogin');
       googleButton.addEventListener('click',async()=>{const errorNode=document.getElementById('loginError');errorNode.textContent='Google sign-in শুরু হচ্ছে…';googleButton.disabled=true;try{const {error}=await client.auth.signInWithOAuth({provider:'google',options:{redirectTo:`${location.origin}/dashboard`,scopes:'openid email profile',queryParams:{prompt:'select_account'}}});if(error)throw error}catch(error){errorNode.textContent=`Google sign-in শুরু হয়নি: ${error?.message||'Supabase Google provider যাচাই করুন.'}`;googleButton.disabled=false}});
-      document.getElementById('loginForm').addEventListener('submit',async event=>{event.preventDefault();const form=new FormData(event.currentTarget);const errorNode=document.getElementById('loginError');errorNode.textContent='Sign-in হচ্ছে…';const button=event.currentTarget.querySelector('button');button.disabled=true;try{const {error}=await client.auth.signInWithPassword({email:form.get('email'),password:form.get('password')});if(error)throw error}catch(error){const message=error?.message||'';errorNode.textContent=/invalid login credentials/i.test(message)?'ইমেইল/পাসওয়ার্ড মেলেনি। Google account হলে Google দিয়ে Sign in করুন; password login-এর জন্য Supabase Auth-এ password থাকতে হবে.':/email not confirmed/i.test(message)?'এই email confirm হয়নি। Supabase Auth email confirmation সম্পন্ন করুন.':`Sign-in ব্যর্থ: ${message||'Supabase Auth account যাচাই করুন.'}`;button.disabled=false}});
       client.auth.onAuthStateChange((_event,nextSession)=>{setTimeout(()=>showSession(nextSession),0)});
       const sessionRequest=client.auth.getSession().catch(()=>({data:{session:null}}));
       const sessionResult=await Promise.race([sessionRequest,new Promise(resolve=>setTimeout(()=>resolve({data:{session:null}}),5000))]);
