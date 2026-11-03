@@ -21,13 +21,13 @@ foreach ($posts as $post) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SEO, Facebook marketing, Google Ads and practical digital marketing guides by Nur Muhammad.">
+  <meta name="description" content="Social media marketing, SEO, Facebook marketing, Google Ads and practical digital marketing guides by Nur Muhammad.">
   <meta name="theme-color" content="#f7f8f4">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://landing-page-nur-811a.vercel.app/blog">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Digital Marketing Blog | Nur Muhammad">
-  <meta property="og:description" content="Practical SEO, Facebook marketing, Google Ads, and digital marketing guides.">
+  <meta property="og:description" content="Practical social media, SEO, Facebook marketing, Google Ads, and digital marketing guides.">
   <meta property="og:url" content="https://landing-page-nur-811a.vercel.app/blog">
   <title>ডিজিটাল মার্কেটিং ব্লগ | Nur Muhammad</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@ foreach ($posts as $post) {
 <style>:root{--ink:#17152f;--muted:#64627a;--green:#6741d9;--green2:#8867f1;--lime:#bfff65;--cream:#f7f6fc;--pale:#f0ecff;--bg:#f7f6fc;--line:#e7e4f0;--white:#fff}body{background:#f7f6fc;color:#17152f}.nav-wrap{background:rgba(255,255,255,.95);border-bottom-color:#e7e4f0}.brand-mark{background:#6741d9}.eyebrow,.category,.crumb a,.read-link{color:#6741d9}.post,.cover{background:#fff;border-color:#e7e4f0}.post:hover{box-shadow:0 14px 35px #34236f14}.article h2{color:#211d3b}.article p,.article li,.intro{color:#55536e}.article-cta{background:linear-gradient(120deg,#181437,#2c2066);color:#fff}.article-cta p{color:#ddd9ed}.article-cta .button{background:#bfff65;color:#17152f}.article-cta .button:hover{background:#a6ee48}.sidebar{background:#fff;border-color:#e7e4f0}.side-nav a:hover{background:#f2efff;color:#6741d9}.side-nav a.active{background:#f0ecff;color:#6741d9}</style></head>
 <body>
   <div class="nav-wrap"><nav class="container" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">↗</span><span>Nur Muhammad<span style="color:var(--green)">.</span></span></a><div class="nav-tools"><a class="home-link" href="/" data-bn="← হোম" data-en="← Home">← হোম</a><button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button></div></nav></div>
-  <main class="container"><header class="head"><span class="eyebrow" data-bn="নুর মুহাম্মদের ব্লগ" data-en="Nur Muhammad’s blog">নুর মুহাম্মদের ব্লগ</span><h1 data-bn="ডিজিটাল মার্কেটিং—সহজ, বাস্তব, পরিষ্কার" data-en="Digital marketing—clear, practical, useful">ডিজিটাল মার্কেটিং—সহজ, বাস্তব, পরিষ্কার</h1><p data-bn="SEO, Facebook Marketing ও Google Ads নিয়ে ছোট ব্যবসার জন্য ব্যবহারিক গাইড।" data-en="Practical guides to SEO, Facebook marketing, and Google Ads for small businesses.">SEO, Facebook Marketing ও Google Ads নিয়ে ছোট ব্যবসার জন্য ব্যবহারিক গাইড।</p></header>
+  <main class="container"><header class="head"><span class="eyebrow" data-bn="নুর মুহাম্মদের ব্লগ" data-en="Nur Muhammad’s blog">নুর মুহাম্মদের ব্লগ</span><h1 data-bn="ডিজিটাল মার্কেটিং—সহজ, বাস্তব, পরিষ্কার" data-en="Digital marketing—clear, practical, useful">ডিজিটাল মার্কেটিং—সহজ, বাস্তব, পরিষ্কার</h1><p data-bn="Social media, SEO, Facebook Marketing ও Google Ads নিয়ে ছোট ব্যবসার জন্য ব্যবহারিক গাইড।" data-en="Practical guides to social media, SEO, Facebook marketing, and Google Ads for small businesses.">Social media, SEO, Facebook Marketing ও Google Ads নিয়ে ছোট ব্যবসার জন্য ব্যবহারিক গাইড।</p></header>
     <section class="posts" aria-label="Blog posts">
       <?php foreach ($cards as $card): ?>
         <article class="post">

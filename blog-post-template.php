@@ -5,7 +5,9 @@ $escape = static fn(string $value): string => htmlspecialchars($value, ENT_QUOTE
 $canonical = 'https://landing-page-nur-811a.vercel.app/blog/' . $article['slug'];
 $coverExtension = isset($article['cover_file']) ? 'jpg' : 'svg';
 $coverUrl = $canonical . '/cover.' . $coverExtension;
-$publishedAt = '2026-10-29T10:00:00+06:00';
+$publishedAt = $article['published_at'] ?? '2026-10-29T10:00:00+06:00';
+$publishedLabelBn = $article['published_label_bn'] ?? 'প্রথম প্রকাশ: ২৯ অক্টোবর ২০২৬ · ৫ মিনিটে পড়ুন';
+$publishedLabelEn = $article['published_label_en'] ?? 'Published: October 29, 2026 · 5 min read';
 $structuredData = [
     '@context' => 'https://schema.org',
     '@type' => 'BlogPosting',
@@ -65,7 +67,7 @@ $jsonLd = json_encode($structuredData, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_S
     <div class="crumb"><a href="/" data-bn="হোম" data-en="Home">হোম</a> / <a href="/blog" data-bn="ব্লগ" data-en="Blog">ব্লগ</a></div>
     <span class="category" data-bn="<?= $escape($article['category_bn']) ?>" data-en="<?= $escape($article['category_en']) ?>"><?= $escape($article['category_bn']) ?></span>
     <h1 itemprop="headline" data-bn="<?= $escape($article['title_bn']) ?>" data-en="<?= $escape($article['title_en']) ?>"><?= $escape($article['title_bn']) ?></h1>
-    <div class="meta"><span class="author-dot">N</span><span><strong itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Nur Muhammad</span></strong><br><span data-bn="প্রথম প্রকাশ: ২৯ অক্টোবর ২০২৬ · ৫ মিনিটে পড়ুন" data-en="Published: October 29, 2026 · 5 min read">প্রথম প্রকাশ: ২৯ অক্টোবর ২০২৬ · ৫ মিনিটে পড়ুন</span></span></div>
+    <div class="meta"><span class="author-dot">N</span><span><strong itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Nur Muhammad</span></strong><br><span data-bn="<?= $escape($publishedLabelBn) ?>" data-en="<?= $escape($publishedLabelEn) ?>"><?= $escape($publishedLabelBn) ?></span></span></div>
     <figure class="cover"><img src="<?= $escape('/blog/' . $article['slug'] . '/cover.' . $coverExtension) ?>" alt="<?= $escape($article['cover_alt']) ?>" width="1000" height="560" fetchpriority="high"></figure>
     <p class="intro" data-bn="<?= $escape($article['intro_bn']) ?>" data-en="<?= $escape($article['intro_en']) ?>"><?= $escape($article['intro_bn']) ?></p>
     <?php foreach ($article['sections'] as $section): ?>

@@ -116,6 +116,8 @@ if ($path === '/sitemap.xml') {
         '/blog/facebook-marketing',
         '/blog/google-ads-basics',
         '/blog/nur-muhammad-personal-branding',
+        '/blog/social-media-marketing-plan',
+        '/blog/social-media-content-calendar',
     ];
     echo '<?xml version="1.0" encoding="UTF-8"?>';
     echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
@@ -128,7 +130,7 @@ if ($path === '/sitemap.xml') {
 
 if ($path === '/llms.txt') {
     header('Content-Type: text/plain; charset=utf-8');
-    echo "# Nur Muhammad\n\n> Digital marketer sharing practical guides about SEO, Facebook marketing, and Google Ads.\n\n## Website\n- Home: https://landing-page-nur-811a.vercel.app/\n- About and services: https://landing-page-nur-811a.vercel.app/#about\n- Blog: https://landing-page-nur-811a.vercel.app/blog\n- Marketing dashboard: https://landing-page-nur-811a.vercel.app/dashboard (demonstration data)\n\n## Articles\n- Digital marketing for small businesses: https://landing-page-nur-811a.vercel.app/blog/digital-marketing-basics\n- SEO for small businesses: https://landing-page-nur-811a.vercel.app/blog/seo-for-small-business\n- Facebook marketing: https://landing-page-nur-811a.vercel.app/blog/facebook-marketing\n- Google Ads: https://landing-page-nur-811a.vercel.app/blog/google-ads-basics\n- Personal branding and profile: https://landing-page-nur-811a.vercel.app/blog/nur-muhammad-personal-branding\n\n## Services\nSocial media marketing, paid advertising, SEO and content, marketing strategy, lead generation, analytics and reporting.\n\n## Contact\n- WhatsApp: https://wa.me/8801314819285\n- Facebook: https://www.facebook.com/share/1FBv45rXjp/\n- Instagram: https://www.instagram.com/km_nurmuhammad_/\n- LinkedIn: https://www.linkedin.com/in/nur-muhammad-464158443\n";
+    echo "# Nur Muhammad\n\n> Digital marketer sharing practical guides about social media marketing, SEO, Facebook marketing, and Google Ads.\n\n## Website\n- Home: https://landing-page-nur-811a.vercel.app/\n- About and services: https://landing-page-nur-811a.vercel.app/#about\n- Blog: https://landing-page-nur-811a.vercel.app/blog\n- Marketing dashboard: https://landing-page-nur-811a.vercel.app/dashboard (demonstration data)\n\n## Articles\n- Digital marketing for small businesses: https://landing-page-nur-811a.vercel.app/blog/digital-marketing-basics\n- SEO for small businesses: https://landing-page-nur-811a.vercel.app/blog/seo-for-small-business\n- Facebook marketing: https://landing-page-nur-811a.vercel.app/blog/facebook-marketing\n- Google Ads: https://landing-page-nur-811a.vercel.app/blog/google-ads-basics\n- Personal branding and profile: https://landing-page-nur-811a.vercel.app/blog/nur-muhammad-personal-branding\n- Social media marketing plan: https://landing-page-nur-811a.vercel.app/blog/social-media-marketing-plan\n- Social media content calendar: https://landing-page-nur-811a.vercel.app/blog/social-media-content-calendar\n\n## Services\nSocial media marketing, paid advertising, SEO and content, marketing strategy, lead generation, analytics and reporting.\n\n## Contact\n- WhatsApp: https://wa.me/8801314819285\n- Facebook: https://www.facebook.com/share/1FBv45rXjp/\n- Instagram: https://www.instagram.com/km_nurmuhammad_/\n- LinkedIn: https://www.linkedin.com/in/nur-muhammad-464158443\n";
     exit;
 }
 
