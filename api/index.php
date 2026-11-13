@@ -142,7 +142,7 @@ if ($path === '/dashboard' || $path === '/dashboard/') {
 }
 
 // The catch-all Vercel route sends asset requests through this router too.
-if (preg_match('~^/assets/(nur-muhammad(?:-personal-branding)?)\.jpg$~', $path, $matches) === 1) {
+if (preg_match('~^/assets/(nur-muhammad(?:-personal-branding)?|services-blue-background)\.jpg$~', $path, $matches) === 1) {
     $assetPath = dirname(__DIR__) . '/assets/' . $matches[1] . '.jpg';
     if (!is_file($assetPath)) {
         http_response_code(404);
