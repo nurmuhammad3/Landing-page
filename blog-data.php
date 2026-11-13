@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-return [
+$posts = [
     'seo-for-small-business' => [
         'slug' => 'seo-for-small-business',
         'category_bn' => 'SEO',
@@ -321,3 +321,5 @@ SVG,
         ],
     ],
 ];
+
+return $posts + require __DIR__ . '/jewellery-blog-data.php';
