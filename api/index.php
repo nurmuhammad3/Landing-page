@@ -155,6 +155,19 @@ if (preg_match('~^/assets/(nur-muhammad(?:-personal-branding)?|services-blue-bac
     exit;
 }
 
+if ($path === '/assets/nur-muhammad-logo.png') {
+    $logoPath = dirname(__DIR__) . '/assets/nur-muhammad-logo.png';
+    if (!is_file($logoPath)) {
+        http_response_code(404);
+        exit;
+    }
+    header('Content-Type: image/png');
+    header('Cache-Control: public, max-age=31536000, immutable');
+    header('X-Content-Type-Options: nosniff');
+    readfile($logoPath);
+    exit;
+}
+
 if (preg_match('~^/blog/([a-z0-9-]+)/cover\.(svg|jpg)$~', $path, $matches) === 1) {
     $posts = require dirname(__DIR__) . '/blog-data.php';
     $slug = $matches[1];
