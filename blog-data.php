@@ -320,6 +320,60 @@ SVG,
             ['label' => 'Meta Business Help: View Insights in Meta Business Suite', 'url' => 'https://www.facebook.com/business/help/4185855074991336'],
         ],
     ],
+    'backlinks-importance-bangladesh' => [
+        'slug' => 'backlinks-importance-bangladesh',
+        'category_bn' => 'SEO ও ব্যাকলিংক',
+        'category_en' => 'SEO & Backlinks',
+        'title_bn' => 'ব্যাকলিংক কী এবং কেন গুরুত্বপূর্ণ? বাংলাদেশের ব্যবসার জন্য নিরাপদ SEO গাইড',
+        'title_en' => 'What are backlinks and why do they matter? A safe SEO guide for Bangladeshi businesses',
+        'description_bn' => 'ব্যাকলিংক কীভাবে বিশ্বাসযোগ্যতা, referral traffic ও SEO-তে সাহায্য করতে পারে—এবং কীভাবে link spam এড়িয়ে চলবেন।',
+        'description_en' => 'How relevant backlinks can support credibility, referral traffic, and SEO—and how to avoid link spam.',
+        'intro_bn' => 'ব্যাকলিংক হলো অন্য ওয়েবসাইট থেকে আপনার ওয়েবসাইটে আসা একটি লিংক। ভালো, প্রাসঙ্গিক লিংক মানুষকে আপনার কাজে পৌঁছাতে সাহায্য করে এবং সার্চ ইঞ্জিনকে পেজের বিষয় ও সম্পর্ক বুঝতে সহায়তা করতে পারে। তবে বেশি লিংক মানেই ভালো ফল বা নির্দিষ্ট ranking—এমন নিশ্চয়তা নেই।',
+        'intro_en' => 'A backlink is a link from another website to yours. Relevant links can help people discover your work and help search engines understand relationships between pages. More links do not guarantee better results or a specific ranking.',
+        'cover_alt' => 'A relevant website linking to a small business website, with people, referral visits, and an organic search growth chart',
+        'cover_svg' => <<<'SVG'
+<svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A relevant website linking to a small business website, with referral visitors and an organic search growth chart"><defs><linearGradient id="backlinkBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101936"/><stop offset="1" stop-color="#34226d"/></linearGradient><linearGradient id="backlinkAccent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#25b9ff"/><stop offset="1" stop-color="#8754f5"/></linearGradient><filter id="backlinkShadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#090d21" flood-opacity=".28"/></filter></defs><rect width="1000" height="560" fill="url(#backlinkBg)"/><circle cx="120" cy="95" r="100" fill="#392b7c" opacity=".58"/><circle cx="899" cy="473" r="155" fill="#1c4a83" opacity=".35"/><g fill="#aeb9ff" opacity=".35"><circle cx="812" cy="73" r="4"/><circle cx="845" cy="73" r="4"/><circle cx="878" cy="73" r="4"/><circle cx="911" cy="73" r="4"/><circle cx="812" cy="106" r="4"/><circle cx="845" cy="106" r="4"/><circle cx="878" cy="106" r="4"/><circle cx="911" cy="106" r="4"/></g><rect x="74" y="111" width="346" height="302" rx="24" fill="#fff" filter="url(#backlinkShadow)"/><rect x="74" y="111" width="346" height="65" rx="24" fill="#e9e6ff"/><path d="M74 151h346v25H74z" fill="#e9e6ff"/><circle cx="105" cy="143" r="7" fill="#8b55f5"/><circle cx="129" cy="143" r="7" fill="#28baff"/><circle cx="153" cy="143" r="7" fill="#bbc5dc"/><rect x="105" y="207" width="188" height="13" rx="6" fill="#31265f"/><rect x="105" y="235" width="275" height="8" rx="4" fill="#d5d9e6"/><rect x="105" y="252" width="251" height="8" rx="4" fill="#e2e5ed"/><rect x="105" y="282" width="125" height="10" rx="5" fill="#7953e8"/><rect x="105" y="305" width="267" height="8" rx="4" fill="#d5d9e6"/><rect x="105" y="322" width="231" height="8" rx="4" fill="#e2e5ed"/><path d="M106 366h106" stroke="#28a9ea" stroke-width="7" stroke-linecap="round"/><path d="M226 366h50" stroke="#b5bdd0" stroke-width="7" stroke-linecap="round"/><rect x="578" y="111" width="348" height="302" rx="24" fill="#fff" filter="url(#backlinkShadow)"/><rect x="578" y="111" width="348" height="65" rx="24" fill="#e5f4ff"/><path d="M578 151h348v25H578z" fill="#e5f4ff"/><circle cx="609" cy="143" r="7" fill="#28a9ea"/><circle cx="633" cy="143" r="7" fill="#8b55f5"/><circle cx="657" cy="143" r="7" fill="#bbc5dc"/><rect x="610" y="207" width="177" height="13" rx="6" fill="#24335c"/><rect x="610" y="235" width="277" height="8" rx="4" fill="#d5dce8"/><rect x="610" y="252" width="245" height="8" rx="4" fill="#e2e7ef"/><rect x="610" y="282" width="105" height="10" rx="5" fill="#258ecb"/><rect x="610" y="305" width="269" height="8" rx="4" fill="#d5dce8"/><rect x="610" y="322" width="214" height="8" rx="4" fill="#e2e7ef"/><rect x="610" y="352" width="278" height="38" rx="10" fill="#f1edff"/><circle cx="632" cy="371" r="8" fill="#8251eb"/><path d="M650 371h167" stroke="#aab1c5" stroke-width="6" stroke-linecap="round"/><path d="M420 259h153" stroke="url(#backlinkAccent)" stroke-width="12" stroke-linecap="round"/><path d="m543 227 34 32-34 32" fill="none" stroke="#54c5ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><circle cx="500" cy="259" r="37" fill="#352572" stroke="#9b7cff" stroke-width="3"/><path d="M484 259a15 15 0 0 1 15-15h10m7 15a15 15 0 0 1-15 15h-10m-2-15h26" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><path d="M188 457h626" stroke="#8794c9" stroke-width="3" opacity=".42"/><g fill="#bfff65"><circle cx="246" cy="457" r="13"/><circle cx="500" cy="457" r="13"/><circle cx="754" cy="457" r="13"/></g><g fill="#fff"><circle cx="500" cy="457" r="5"/><circle cx="246" cy="457" r="5"/><circle cx="754" cy="457" r="5"/></g><text x="246" y="499" fill="#e8e5ff" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">RELEVANT SOURCE</text><text x="500" y="499" fill="#e8e5ff" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">USEFUL LINK</text><text x="754" y="499" fill="#e8e5ff" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">NEW VISITORS</text></svg>
+SVG,
+        'published_at' => '2026-11-20T08:19:00+06:00',
+        'published_label_bn' => 'প্রথম প্রকাশ: ২০ নভেম্বর ২০২৬ · ৬ মিনিটে পড়ুন',
+        'published_label_en' => 'Published: November 20, 2026 · 6 min read',
+        'sections' => [
+            [
+                'heading_bn' => 'ব্যাকলিংক কেন কাজে লাগতে পারে?',
+                'heading_en' => 'Why can backlinks be useful?',
+                'body_bn' => 'একটি প্রাসঙ্গিক, বিশ্বাসযোগ্য ওয়েবসাইট আপনার উপকারী পেজে লিংক দিলে পাঠক সরাসরি আপনার সাইটে আসতে পারেন। এমন referral traffic নতুন মানুষের কাছে পণ্য, সেবা বা দক্ষতা পরিচয় করায়। লিংকটি যদি বিষয়গতভাবে প্রাসঙ্গিক ও স্বাভাবিকভাবে দেওয়া হয়, সেটি সার্চ ইঞ্জিনকে পেজগুলো কীভাবে সম্পর্কিত তা বুঝতেও সহায়তা করতে পারে। তবু ব্যাকলিংক ranking-এর একমাত্র উপাদান নয়; ভালো কনটেন্ট, ব্যবহারকারীর প্রয়োজন এবং প্রযুক্তিগতভাবে crawl করা যায় এমন পেজও জরুরি।',
+                'body_en' => 'When a relevant, trustworthy website links to a useful page, readers can visit you directly. That referral traffic introduces your products, services, or expertise to new people. A natural, topical link can also help search engines understand how pages relate. Backlinks are only one part of search visibility: useful content, user needs, and crawlable pages matter too.',
+            ],
+            [
+                'heading_bn' => 'লিংকের সংখ্যা নয়, প্রাসঙ্গিকতা দেখুন',
+                'heading_en' => 'Focus on relevance, not link count',
+                'body_bn' => 'আপনার শিল্প, স্থানীয় এলাকা বা নির্দিষ্ট বিষয়ের সঙ্গে সম্পর্ক আছে—এমন সাইটের উল্লেখ বেশি উপকারী হতে পারে। লিংকটি পাঠকের কাজে লাগছে কি না, উৎসটি বিশ্বাসযোগ্য কি না এবং লিংকের আশপাশের লেখা বিষয়টি ঠিকভাবে ব্যাখ্যা করছে কি না দেখুন। শুধু উচ্চ domain metric বা বড় সংখ্যাকে সাফল্য ধরে নেবেন না।',
+                'body_en' => 'A mention from a site related to your industry, location, or topic is more likely to help the right audience. Ask whether the link serves readers, whether the source is trustworthy, and whether the surrounding text explains the link accurately. Do not treat a high domain metric or a large count as success by itself.',
+            ],
+            [
+                'heading_bn' => 'বাংলাদেশের ব্যবসা কীভাবে স্বাভাবিকভাবে লিংক পেতে পারে?',
+                'heading_en' => 'How can Bangladeshi businesses earn links naturally?',
+                'body_bn' => 'কাস্টমারের কাজে লাগে এমন গাইড, নিজস্ব গবেষণা, পরিষ্কার product information, স্থানীয় event বা industry resource তৈরি করুন। প্রাসঙ্গিক ব্যবসায়িক সংগঠন, সরবরাহকারী, অংশীদার বা স্থানীয় সংবাদমাধ্যমের সঙ্গে সত্যিকারের কাজের সম্পর্ক গড়ুন। তারা যদি পাঠকের জন্য আপনার রিসোর্স উল্লেখ করার কারণ খুঁজে পান, তখন লিংকটি স্বাভাবিকভাবে আসতে পারে। লিংক পাওয়ার শর্তে অযথা বিনিময় বা চাপ তৈরি করবেন না।',
+                'body_en' => 'Create useful customer guides, original research, clear product information, local event pages, or industry resources. Build genuine relationships with relevant business groups, suppliers, partners, and local media. If they have a reader-focused reason to cite your resource, a link may follow naturally. Avoid pressuring people or requiring a link in exchange for something unrelated.',
+            ],
+            [
+                'heading_bn' => 'কোন backlink কৌশল এড়িয়ে চলবেন?',
+                'heading_en' => 'Which backlink tactics should you avoid?',
+                'body_bn' => 'Ranking বাড়ানোর উদ্দেশ্যে লিংক কেনা বা বিক্রি, অতিরিক্ত link exchange, automated link schemes, low-quality directory-তে mass submission এবং keyword-rich guest post campaign ঝুঁকিপূর্ণ। বিজ্ঞাপন বা sponsorship-এর বিনিময়ে লিংক হলে সেটিকে যথাযথভাবে `rel="sponsored"` বা `rel="nofollow"` দিয়ে qualify করার নিয়ম মেনে চলুন।',
+                'body_en' => 'Avoid buying or selling links for ranking, excessive link exchanges, automated link schemes, mass submissions to low-quality directories, and keyword-heavy guest-post campaigns. For paid or sponsored links, follow the applicable qualification guidance such as `rel="sponsored"` or `rel="nofollow"`.',
+            ],
+            [
+                'heading_bn' => 'ফলাফল কীভাবে মাপবেন?',
+                'heading_en' => 'How should you measure results?',
+                'body_bn' => 'কোন সাইট থেকে লিংক এসেছে, সেটি প্রাসঙ্গিক কি না, referral visitor কী করছে এবং ওই পেজে search impressions বা clicks বদলাচ্ছে কি না নথিভুক্ত করুন। Google Search Console ও website analytics-এর তথ্য একসঙ্গে দেখুন। কয়েকটি লিংক পাওয়ার পরই ranking বদলাবে—এমন ধরে নেবেন না; SEO ফলাফল সময় নেয় এবং কোনো নির্দিষ্ট অবস্থানের নিশ্চয়তা নেই।',
+                'body_en' => 'Record where each link came from, its relevance, what referral visitors do, and whether the page’s search impressions or clicks change. Review Search Console alongside website analytics. Do not expect a ranking change from a few links: SEO takes time and no specific position is guaranteed.',
+            ],
+        ],
+        'sources' => [
+            ['label' => 'Google Search Central: Link best practices', 'url' => 'https://developers.google.com/search/docs/crawling-indexing/links-crawlable'],
+            ['label' => 'Google Search Central: Spam policies (link spam)', 'url' => 'https://developers.google.com/search/docs/essentials/spam-policies#link-spam'],
+        ],
+    ],
 ];
 
 return $posts + require __DIR__ . '/jewellery-blog-data.php';
