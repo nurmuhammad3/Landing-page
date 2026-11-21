@@ -374,6 +374,61 @@ SVG,
             ['label' => 'Google Search Central: Spam policies (link spam)', 'url' => 'https://developers.google.com/search/docs/essentials/spam-policies#link-spam'],
         ],
     ],
+    'local-seo-bangladesh-small-business' => [
+        'slug' => 'local-seo-bangladesh-small-business',
+        'category_bn' => 'Local SEO',
+        'category_en' => 'Local SEO',
+        'title_bn' => 'Local SEO কী? বাংলাদেশের স্থানীয় ব্যবসার জন্য কেন গুরুত্বপূর্ণ',
+        'title_en' => 'What is local SEO? Why it matters for local businesses in Bangladesh',
+        'description_bn' => 'Google Search ও Maps-এ কাছের ক্রেতাদের কাছে পৌঁছাতে সঠিক Business Profile, লোকেশনভিত্তিক helpful content ও পরিমাপযোগ্য local SEO কৌশল।',
+        'description_en' => 'A practical local SEO guide for nearby customers: accurate business details, useful location pages, reviews, and measurement.',
+        'intro_bn' => 'যখন কেউ “ঢাকায় dentist”, “চট্টগ্রামে jewellery shop” বা নিজের এলাকার কোনো service খোঁজেন, তখন Local SEO ব্যবসাটিকে সেই এলাকার প্রাসঙ্গিক অনুসন্ধানে খুঁজে পেতে সাহায্য করে। এটি শুধু Google Business Profile খোলা নয়—ওয়েবসাইট, সঠিক ব্যবসায়িক তথ্য, স্থানীয় কনটেন্ট এবং মানুষের বিশ্বাস—সবকিছুর সমন্বয়।',
+        'intro_en' => 'When someone searches for a dentist in Dhaka, a jewellery shop in Chattogram, or a service near them, local SEO helps a business become discoverable for relevant local searches. It is more than creating a Google Business Profile: it combines accurate business details, useful local pages, and customer trust.',
+        'cover_alt' => 'A local shop on a map with a location pin, nearby customer, and local search result card',
+        'cover_svg' => <<<'SVG'
+<svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Local business on a map with a location pin, nearby customers, and a search result card"><defs><linearGradient id="localBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111936"/><stop offset="1" stop-color="#2b2163"/></linearGradient><linearGradient id="localPin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#32c8ff"/><stop offset="1" stop-color="#8451ed"/></linearGradient><filter id="localShadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#080d20" flood-opacity=".25"/></filter></defs><rect width="1000" height="560" fill="url(#localBg)"/><circle cx="137" cy="84" r="104" fill="#3f2d89" opacity=".55"/><circle cx="885" cy="474" r="150" fill="#124e79" opacity=".4"/><path d="M0 361c158-63 247-61 375-13s208 53 326 4 211-41 299-6v214H0Z" fill="#20275b" opacity=".9"/><path d="M-30 229c150-37 252-26 363 27 117 56 216 45 321-9 106-54 224-69 394-32" fill="none" stroke="#536292" stroke-width="4" stroke-dasharray="12 12"/><path d="M-28 453c161-77 283-82 401-28 116 53 217 56 335 3 101-46 192-52 320-17" fill="none" stroke="#536292" stroke-width="4" stroke-dasharray="12 12"/><g fill="#364170" stroke="#7785ae" stroke-width="2" opacity=".75"><rect x="92" y="137" width="133" height="73" rx="12"/><rect x="284" y="163" width="113" height="70" rx="12"/><rect x="647" y="139" width="126" height="72" rx="12"/><rect x="800" y="243" width="122" height="72" rx="12"/><rect x="174" y="385" width="146" height="65" rx="12"/><rect x="628" y="397" width="133" height="67" rx="12"/></g><path d="M510 94c-77 0-139 59-139 134 0 99 139 231 139 231s139-132 139-231c0-75-62-134-139-134Z" fill="url(#localPin)" filter="url(#localShadow)"/><circle cx="510" cy="229" r="53" fill="#fff"/><path d="M470 246v-36l40-29 40 29v36h-28v-28h-24v28Z" fill="#2b2163"/><rect x="493" y="223" width="15" height="23" fill="#bfff65"/><circle cx="510" cy="228" r="20" fill="none" stroke="#dceeff" stroke-width="4" opacity=".8"/><rect x="681" y="301" width="248" height="129" rx="22" fill="#fff" filter="url(#localShadow)"/><circle cx="715" cy="338" r="15" fill="#bfff65"/><path d="M708 338h14m-7-7v14" stroke="#263260" stroke-width="3" stroke-linecap="round"/><rect x="744" y="326" width="143" height="12" rx="6" fill="#27254d"/><rect x="706" y="368" width="194" height="8" rx="4" fill="#cfd5e5"/><rect x="706" y="386" width="134" height="8" rx="4" fill="#e0e4ee"/><g fill="#ffc94a"><path d="m711 409 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/><path d="m737 409 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/><path d="m763 409 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/><path d="m789 409 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/><path d="m815 409 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/></g><circle cx="253" cy="287" r="17" fill="#bfff65"/><path d="M225 332c2-26 12-39 28-39s26 13 28 39" fill="#35b7f3"/><circle cx="761" cy="116" r="17" fill="#ffb8a5"/><path d="M734 161c2-26 12-39 27-39s26 13 28 39" fill="#8a62ef"/><path d="M280 277c55-43 93-58 146-61M677 173c-16 51-26 84-32 123M310 357c45 16 75 22 126 19" fill="none" stroke="#b7c4ff" stroke-width="4" stroke-dasharray="8 10" stroke-linecap="round" opacity=".65"/><circle cx="426" cy="216" r="8" fill="#bfff65"/><circle cx="645" cy="296" r="8" fill="#bfff65"/><circle cx="431" cy="376" r="8" fill="#bfff65"/><text x="500" y="518" fill="#e5e9ff" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" letter-spacing="3">LOCAL SEARCH · NEARBY CUSTOMERS · TRUST</text></svg>
+SVG,
+        'published_at' => '2026-11-21T18:15:00+06:00',
+        'published_label_bn' => 'প্রথম প্রকাশ: ২১ নভেম্বর ২০২৬ · ৬ মিনিটে পড়ুন',
+        'published_label_en' => 'Published: November 21, 2026 · 6 min read',
+        'sections' => [
+            [
+                'heading_bn' => 'Local SEO-তে কী কী থাকে?',
+                'heading_en' => 'What does local SEO include?',
+                'body_bn' => 'আপনার ব্যবসা বাস্তবে কোথায় কাজ করে এবং কোন এলাকায় কাস্টমারকে সেবা দেয়—সেই তথ্য অনলাইনে পরিষ্কারভাবে দেখানো Local SEO-র ভিত্তি। এর মধ্যে থাকে ওয়েবসাইটের location ও service page, সঠিক নাম-ঠিকানা-ফোন, Google Business Profile-এর যোগ্য হলে সেটি সঠিকভাবে পরিচালনা, স্থানীয়ভাবে উপকারী লেখা, এবং কাস্টমার রিভিউয়ের পেশাদার উত্তর।',
+                'body_en' => 'Local SEO starts by making it clear where your business operates and which customers it serves. It can include useful location and service pages, consistent business name, address and phone details, an accurate Google Business Profile when eligible, local content, and thoughtful responses to customer reviews.',
+            ],
+            [
+                'heading_bn' => 'কেন এটি বাংলাদেশের ছোট ব্যবসার জন্য গুরুত্বপূর্ণ?',
+                'heading_en' => 'Why does it matter for small businesses in Bangladesh?',
+                'body_bn' => 'স্থানীয়ভাবে খুঁজছেন এমন মানুষ সাধারণত কাছাকাছি দোকান, ক্লিনিক, রেস্টুরেন্ট বা service provider-এর তথ্য চান। আপনার ব্যবসার তথ্য সহজে পাওয়া গেলে তারা ফোন, দিকনির্দেশ, সময়সূচি, পণ্য বা সেবা যাচাই করে পরের পদক্ষেপ নিতে পারেন। নির্দিষ্ট এলাকার প্রয়োজন নিয়ে লেখা ওয়েবপেজও আপনার প্রকৃত সেবা-এলাকার কাস্টমারকে সাহায্য করতে পারে। কোনো কৌশলই নির্দিষ্ট ranking বা বিক্রির নিশ্চয়তা দেয় না।',
+                'body_en' => 'People searching locally often want details about a nearby shop, clinic, restaurant, or service provider. Clear information helps them check hours, directions, products, and services before deciding what to do next. Helpful pages about the areas you genuinely serve can answer local customers’ questions. No tactic guarantees a particular ranking or sales result.',
+            ],
+            [
+                'heading_bn' => 'Google Business Profile সঠিকভাবে সাজান',
+                'heading_en' => 'Set up your Google Business Profile accurately',
+                'body_bn' => 'আপনার ব্যবসা যদি সরাসরি কাস্টমারের কাছে যায় বা বাস্তব স্থানে কাস্টমারকে সেবা দেয়, Google-এর নিয়ম মেনে একটি উপযুক্ত profile তৈরি ও যাচাই করুন। ব্যবসার আসল নাম, category, সময়, ফোন, ওয়েবসাইট এবং বাস্তব service area দিন। ভুয়া ঠিকানা, virtual office, অতিরিক্ত profile বা keyword-ভরা নাম ব্যবহার করবেন না। কাস্টমার আপনার ঠিকানায় আসে না—এমন service-area business হলে profile-এ বাসার ঠিকানা public না রেখে service area দেখান।',
+                'body_en' => 'If your business serves customers at a real location or travels to them, create and verify an eligible profile under Google’s guidelines. Use the real business name, category, hours, phone, website, and service area. Do not use a fake address, virtual office, duplicate profiles, or keyword-stuffed business name. If customers do not visit your service-area business, hide the residential address and list the genuine service area.',
+            ],
+            [
+                'heading_bn' => 'ওয়েবসাইটে প্রতিটি এলাকার জন্য কাজে লাগে এমন তথ্য দিন',
+                'heading_en' => 'Create useful pages for the places you actually serve',
+                'body_bn' => 'আপনি কোন এলাকায় কী সেবা দেন, কীভাবে বুকিং বা অর্ডার হবে, আনুমানিক সময়সীমা এবং যোগাযোগের উপায় স্পষ্ট করুন। শুধু শহরের নাম বদলে অনেকগুলো প্রায় একই রকম page প্রকাশ করবেন না। বাস্তব local examples, service details, customer questions এবং দরকারি দিকনির্দেশ যোগ করুন। পেজের title ও heading সহজ, নির্দিষ্ট এবং পাঠকের জন্য স্বাভাবিক রাখুন।',
+                'body_en' => 'Explain which services you provide in each area, how to book or order, expected timing, and how to contact you. Avoid publishing many near-identical pages that only swap a city name. Add genuine local examples, service details, answers to customer questions, and useful directions. Keep page titles and headings clear, specific, and natural.',
+            ],
+            [
+                'heading_bn' => 'রিভিউ, তথ্যের মিল এবং ফলাফল দেখুন',
+                'heading_en' => 'Monitor reviews, consistency, and performance',
+                'body_bn' => 'বাস্তব কাস্টমারকে সৎ রিভিউ দিতে আমন্ত্রণ জানান, কিন্তু রিভিউ কেনা, পুরস্কারের শর্তে রিভিউ নেওয়া বা ভুয়া review তৈরি এড়িয়ে চলুন। নতুন রিভিউতে ভদ্রভাবে উত্তর দিন। ওয়েবসাইট ও profile-এ ফোন, ঠিকানা, সময় এবং সেবার তথ্য হালনাগাদ রাখুন। Search Console-এ local query ও page performance এবং analytics-এ call, direction click, form inquiry বা booking-এর মতো ফল দেখুন।',
+                'body_en' => 'Invite genuine customers to leave honest reviews, but avoid buying reviews, offering rewards in exchange, or creating fake reviews. Respond politely. Keep phone, address, hours, and service information current across your site and profile. Use Search Console and analytics to review local queries, page performance, calls, direction clicks, enquiries, and bookings.',
+            ],
+        ],
+        'sources' => [
+            ['label' => 'Google Business Profile Help: Improve local ranking', 'url' => 'https://support.google.com/business/answer/7091'],
+            ['label' => 'Google Business Profile Help: Business representation guidelines', 'url' => 'https://support.google.com/business/answer/3038177'],
+            ['label' => 'Google Search Central: Local Business structured data', 'url' => 'https://developers.google.com/search/docs/appearance/structured-data/local-business'],
+        ],
+    ],
 ];
 
 return $posts + require __DIR__ . '/jewellery-blog-data.php';
