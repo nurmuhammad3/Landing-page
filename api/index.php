@@ -120,6 +120,7 @@ if ($path === '/sitemap.xml') {
         '/blog/social-media-content-calendar',
         '/blog/backlinks-importance-bangladesh',
         '/blog/local-seo-bangladesh-small-business',
+        '/blog/lead-generation-small-business-bangladesh',
         '/blog/jewellery-digital-marketing-bangladesh',
         '/blog/bangladesh-jewellery-marketing-opportunities',
     ];

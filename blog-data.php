@@ -429,6 +429,60 @@ SVG,
             ['label' => 'Google Search Central: Local Business structured data', 'url' => 'https://developers.google.com/search/docs/appearance/structured-data/local-business'],
         ],
     ],
+    'lead-generation-small-business-bangladesh' => [
+        'slug' => 'lead-generation-small-business-bangladesh',
+        'category_bn' => 'Lead Generation',
+        'category_en' => 'Lead Generation',
+        'title_bn' => 'বাংলাদেশের ছোট ব্যবসার জন্য কার্যকর lead generation গাইড',
+        'title_en' => 'A practical lead generation guide for small businesses in Bangladesh',
+        'description_bn' => 'সঠিক সম্ভাব্য কাস্টমার চেনা, উপকারী অফার তৈরি, সহজ যোগাযোগের পথ এবং inquiry অনুসরণ করে lead generation সাজানোর বাস্তব উপায়।',
+        'description_en' => 'A practical way to attract relevant prospects with useful offers, clear contact paths, and consistent follow-up.',
+        'intro_bn' => 'Lead generation মানে শুধু বেশি contact সংগ্রহ করা নয়। আপনার সেবা দরকার হতে পারে—এমন মানুষের আগ্রহ বোঝা, তাদের উপকারী তথ্য দেওয়া এবং সম্মতি নিয়ে পরের ধাপে যোগাযোগ করাই একটি ভালো প্রক্রিয়ার লক্ষ্য।',
+        'intro_en' => 'Lead generation is not simply collecting more contacts. A useful process identifies people who may need your service, gives them relevant information, and follows up with their permission.',
+        'cover_alt' => 'A simple funnel connecting useful content to qualified business enquiries',
+        'cover_svg' => <<<'SVG'
+<svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lead generation funnel"><defs><linearGradient id="lg" x2="1" y2="1"><stop stop-color="#171437"/><stop offset="1" stop-color="#3a287c"/></linearGradient></defs><rect width="1000" height="560" rx="28" fill="url(#lg)"/><circle cx="110" cy="85" r="120" fill="#7659dc" opacity=".22"/><circle cx="900" cy="480" r="170" fill="#35b7f3" opacity=".12"/><text x="500" y="84" text-anchor="middle" fill="#c1ff68" font-family="Arial" font-size="22" letter-spacing="4">A CLEAR PATH FROM INTEREST TO INQUIRY</text><rect x="115" y="132" width="770" height="92" rx="20" fill="#fff" opacity=".97"/><circle cx="170" cy="178" r="23" fill="#7454df"/><path d="M160 178h20m-7-8 8 8-8 8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><text x="220" y="170" fill="#171437" font-family="Arial" font-size="24" font-weight="700">Useful content</text><text x="220" y="198" fill="#66627b" font-family="Arial" font-size="17">Answer a real customer question</text><path d="M500 226v36" stroke="#bfff65" stroke-width="5"/><path d="m490 252 10 12 10-12" fill="none" stroke="#bfff65" stroke-width="5"/><rect x="170" y="270" width="660" height="88" rx="20" fill="#f0ecff"/><circle cx="222" cy="314" r="22" fill="#35b7f3"/><path d="M212 314h20m-7-8 8 8-8 8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><text x="272" y="307" fill="#171437" font-family="Arial" font-size="23" font-weight="700">Simple next step</text><text x="272" y="336" fill="#66627b" font-family="Arial" font-size="17">Ask for a call, quote, or consultation</text><path d="M500 360v34" stroke="#bfff65" stroke-width="5"/><path d="m490 384 10 12 10-12" fill="none" stroke="#bfff65" stroke-width="5"/><rect x="230" y="402" width="540" height="86" rx="20" fill="#bfff65"/><circle cx="282" cy="445" r="21" fill="#171437"/><path d="m272 445 7 7 14-15" fill="none" stroke="#bfff65" stroke-width="4" stroke-linecap="round"/><text x="330" y="438" fill="#171437" font-family="Arial" font-size="23" font-weight="700">Relevant enquiry</text><text x="330" y="466" fill="#37334f" font-family="Arial" font-size="17">Respond promptly and with permission</text></svg>
+SVG,
+        'published_at' => '2026-11-25T09:00:00+06:00',
+        'published_label_bn' => 'প্রথম প্রকাশ: ২৫ নভেম্বর ২০২৬ · ৫ মিনিটে পড়ুন',
+        'published_label_en' => 'Published: November 25, 2026 · 5 min read',
+        'sections' => [
+            [
+                'heading_bn' => '১. আপনার উপযুক্ত কাস্টমারটি নির্দিষ্ট করুন',
+                'heading_en' => '1. Define the customer you can help',
+                'body_bn' => 'কারা আপনার সেবা থেকে বাস্তব উপকার পাবেন, তাদের প্রয়োজন কী এবং সিদ্ধান্ত নেওয়ার আগে কোন প্রশ্ন করেন—এগুলো লিখুন। উদাহরণ হিসেবে, ঢাকার ছোট অনলাইন পোশাক ব্যবসার মালিকের প্রয়োজন হতে পারে পণ্যের ছবি, বিজ্ঞাপনের বাজেট এবং অর্ডার মাপার পদ্ধতি। সবার জন্য একই বার্তা না লিখে নির্দিষ্ট চাহিদাকে লক্ষ্য করুন।',
+                'body_en' => 'Write down who can benefit from your service, what they need, and what they ask before deciding. For example, a small online fashion seller in Dhaka may need better product photos, an ad budget plan, and a way to track orders. Address a specific need rather than sending the same message to everyone.',
+            ],
+            [
+                'heading_bn' => '২. প্রথমে কাজে লাগে এমন কিছু দিন',
+                'heading_en' => '2. Offer something useful first',
+                'body_bn' => 'একটি ছোট checklist, price guide, sample audit বা প্রশ্নোত্তর তৈরি করুন—যা সম্ভাব্য কাস্টমারকে সিদ্ধান্ত নিতে সাহায্য করে। সেটি পেতে অপ্রয়োজনীয় ব্যক্তিগত তথ্য চাইবেন না। কী তথ্য নিচ্ছেন এবং কেন নিচ্ছেন তা পরিষ্কারভাবে বলুন, এবং marketing email পাঠানোর আগে সম্মতি নিন।',
+                'body_en' => 'Create a short checklist, pricing guide, sample audit, or FAQ that helps a prospect make a decision. Do not demand unnecessary personal details to access it. Explain what information you collect and why, and ask permission before sending marketing emails.',
+            ],
+            [
+                'heading_bn' => '৩. যোগাযোগের পথ সহজ ও স্পষ্ট রাখুন',
+                'heading_en' => '3. Make the next step clear',
+                'body_bn' => 'ওয়েবসাইটে একটি দৃশ্যমান call-to-action রাখুন—যেমন quote চান, ফোনে কথা বলুন বা WhatsApp-এ প্রশ্ন করুন। ফর্মে নাম, প্রয়োজনীয় যোগাযোগের মাধ্যম এবং কাজের সংক্ষিপ্ত বিবরণই যথেষ্ট হতে পারে। ফর্ম মোবাইলে পরীক্ষা করুন এবং জমা দেওয়ার পর কী হবে তা জানান।',
+                'body_en' => 'Place a visible call to action on your site, such as requesting a quote, booking a call, or asking a question on WhatsApp. A form may need only a name, a suitable contact method, and a short description of the need. Test it on mobile and explain what happens after submission.',
+            ],
+            [
+                'heading_bn' => '৪. প্রতিটি inquiry-র উত্তর ও follow-up গুছিয়ে রাখুন',
+                'heading_en' => '4. Organize replies and follow-ups',
+                'body_bn' => 'একটি নিরাপদ spreadsheet বা অনুমোদিত CRM-এ inquiry-র তারিখ, উৎস, প্রয়োজন, সম্মতির অবস্থা এবং পরবর্তী কাজ লিখুন। দ্রুত ও ব্যক্তিগতভাবে উত্তর দিন, তবে বারবার অনাকাঙ্ক্ষিত message পাঠাবেন না। উত্তর না এলে একবার ভদ্র follow-up দিয়ে যোগাযোগ বন্ধের সুযোগ রাখুন।',
+                'body_en' => 'Use a secure spreadsheet or approved CRM to record the enquiry date, source, need, consent status, and next action. Reply promptly and personally, but avoid repeated unsolicited messages. If there is no response, send one considerate follow-up and make it easy to opt out.',
+            ],
+            [
+                'heading_bn' => '৫. শুধু lead সংখ্যা নয়, মানও মাপুন',
+                'heading_en' => '5. Measure quality, not just volume',
+                'body_bn' => 'কোন channel থেকে প্রাসঙ্গিক inquiry, appointment, proposal এবং customer এসেছে তা দেখুন। কতজন ফর্ম পূরণ করেছেন তার সঙ্গে কতজন সত্যিই আপনার সেবার উপযুক্ত—এটিও তুলনা করুন। যে campaign খরচ হচ্ছে কিন্তু উপযুক্ত inquiry আনছে না, সেটি পরিবর্তন করুন। ফলাফল নিয়মিত পর্যালোচনা করুন; কোনো নির্দিষ্ট conversion বা বিক্রির নিশ্চয়তা নেই।',
+                'body_en' => 'Track which channels lead to relevant enquiries, appointments, proposals, and customers. Compare form submissions with how many people actually fit your service. Adjust campaigns that spend money without attracting suitable prospects. Review results regularly; no specific conversion or sales outcome is guaranteed.',
+            ],
+        ],
+        'sources' => [
+            ['label' => 'Google Analytics: Generate leads and conversions', 'url' => 'https://support.google.com/analytics/answer/9267735'],
+            ['label' => 'Google Ads: About lead form assets', 'url' => 'https://support.google.com/google-ads/answer/9423234'],
+        ],
+    ],
 ];
 
 return $posts + require __DIR__ . '/jewellery-blog-data.php';
