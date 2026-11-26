@@ -483,6 +483,59 @@ SVG,
             ['label' => 'Google Ads: About lead form assets', 'url' => 'https://support.google.com/google-ads/answer/9423234'],
         ],
     ],
-];
+    'ecommerce-product-page-guide-bangladesh' => [
+        'slug' => 'ecommerce-product-page-guide-bangladesh',
+        'category_bn' => 'Ecommerce',
+        'category_en' => 'Ecommerce',
+        'title_bn' => 'বাংলাদেশের অনলাইন দোকানের product page: ক্রেতার সিদ্ধান্ত সহজ করার গাইড',
+        'title_en' => 'Ecommerce product pages: a practical guide for Bangladeshi small businesses',
+        'description_bn' => 'স্পষ্ট ছবি, সঠিক পণ্যের তথ্য, delivery ও return policy, mobile usability এবং পরিমাপ দিয়ে product page উন্নত করুন।',
+        'description_en' => 'Improve product pages with clear photos, accurate details, delivery and return information, mobile usability, and measurement.',
+        'intro_bn' => 'অনলাইন ক্রেতা পণ্য হাতে নিয়ে দেখতে পারেন না, তাই product page-এ প্রয়োজনীয় তথ্য পরিষ্কারভাবে দেওয়া জরুরি। ভালো পেজ প্রশ্নের উত্তর দেয় এবং ক্রেতাকে চাপ না দিয়ে নিরাপদে পরের ধাপ নিতে সাহায্য করে।',
+        'intro_en' => 'Online shoppers cannot inspect a product in person, so a product page should answer their practical questions clearly. A useful page helps people decide and take the next step without pressure.',
+        'cover_alt' => 'A mobile ecommerce product page showing product details, delivery, and checkout steps',
+        'cover_svg' => <<<'SVG'
+<svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mobile ecommerce product page"><defs><linearGradient id="shopBg" x2="1" y2="1"><stop stop-color="#171437"/><stop offset="1" stop-color="#3b2a78"/></linearGradient></defs><rect width="1000" height="560" rx="26" fill="url(#shopBg)"/><circle cx="100" cy="490" r="150" fill="#35b7f3" opacity=".14"/><circle cx="900" cy="80" r="145" fill="#bfff65" opacity=".12"/><rect x="334" y="35" width="332" height="490" rx="36" fill="#fff"/><rect x="350" y="55" width="300" height="205" rx="24" fill="#f0ecff"/><rect x="385" y="90" width="230" height="130" rx="16" fill="#dcd4ff"/><path d="m421 190 42-53 36 29 36-48 42 72Z" fill="#7454df"/><circle cx="488" cy="122" r="16" fill="#bfff65"/><rect x="372" y="283" width="190" height="15" rx="7" fill="#171437"/><rect x="372" y="310" width="244" height="9" rx="4" fill="#c7c3d8"/><rect x="372" y="329" width="210" height="9" rx="4" fill="#dedbe8"/><rect x="372" y="357" width="90" height="15" rx="7" fill="#6741d9"/><rect x="372" y="389" width="256" height="43" rx="12" fill="#bfff65"/><text x="500" y="416" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#171437">ADD TO CART</text><rect x="372" y="448" width="256" height="42" rx="12" fill="#f0ecff"/><text x="500" y="475" text-anchor="middle" font-family="Arial" font-size="15" fill="#392c75">Delivery · Returns · Support</text><text x="500" y="552" text-anchor="middle" font-family="Arial" font-size="18" letter-spacing="3" fill="#dcd7fa">CLEAR DETAILS · TRUST · EASY CHECKOUT</text></svg>
+SVG,
+        'published_at' => '2026-11-26T09:00:00+06:00',
+        'published_label_bn' => 'প্রথম প্রকাশ: ২৬ নভেম্বর ২০২৬ · ৫ মিনিটে পড়ুন',
+        'published_label_en' => 'Published: November 26, 2026 · 5 min read',
+        'sections' => [
+            [
+                'heading_bn' => '১. বাস্তব ছবি ও নির্ভুল পণ্যের বিবরণ দিন',
+                'heading_en' => '1. Use accurate details and clear photos',
+                'body_bn' => 'বিভিন্ন দিক থেকে তোলা আসল ছবি দিন এবং পণ্যের মাপ, উপাদান, রং, মডেল বা variant সঠিকভাবে লিখুন। পোশাক হলে size chart যোগ করুন; ইলেকট্রনিক্স হলে গুরুত্বপূর্ণ specification ও compatibility জানান। ছবি ও বাস্তব পণ্যের মধ্যে বড় পার্থক্য যেন না থাকে।',
+                'body_en' => 'Show genuine photos from useful angles and accurately list size, materials, colour, model, and variants. Add a size chart for clothing or key specifications and compatibility for electronics. Avoid a mismatch between the image and the actual item.',
+            ],
+            [
+                'heading_bn' => '২. দাম, delivery ও return policy সামনে রাখুন',
+                'heading_en' => '2. Make price, delivery, and returns easy to find',
+                'body_bn' => 'পণ্যের দাম, delivery charge, সম্ভাব্য delivery time, কোন এলাকায় delivery হয় এবং return বা exchange-এর শর্ত স্পষ্টভাবে দেখান। checkout-এর একেবারে শেষে অতিরিক্ত খরচ জানালে ক্রেতা বিভ্রান্ত হতে পারেন। নীতিমালা সহজ ভাষায় লিখুন এবং যা পালন করতে পারবেন শুধু সেটিই প্রতিশ্রুতি দিন।',
+                'body_en' => 'Clearly show the price, delivery fee, estimated delivery time, service areas, and return or exchange conditions. Revealing extra charges only at the final checkout step can surprise customers. Use plain language and promise only what you can honour.',
+            ],
+            [
+                'heading_bn' => '৩. মোবাইলে পেজ ব্যবহার সহজ করুন',
+                'heading_en' => '3. Make the page easy to use on mobile',
+                'body_bn' => 'বাংলাদেশের অনেক ক্রেতা ফোনে পণ্য দেখেন। তাই পেজ দ্রুত load হওয়া, লেখা পড়া, ছবি zoom করা, variant নির্বাচন এবং বাটনে চাপ দেওয়া সহজ হওয়া দরকার। ফর্মে অপ্রয়োজনীয় field কমান এবং checkout-এ কী কী ধাপ আছে তা পরিষ্কার রাখুন।',
+                'body_en' => 'Many customers browse on phones. Make the page load quickly, text readable, images zoomable, variants selectable, and buttons easy to tap. Remove unnecessary form fields and explain the checkout steps clearly.',
+            ],
+            [
+                'heading_bn' => '৪. বিশ্বাস তৈরি করুন, ভুয়া urgency নয়',
+                'heading_en' => '4. Build trust without fake urgency',
+                'body_bn' => 'কাজের যোগাযোগের তথ্য, নিরাপদ payment option, বাস্তব customer support এবং যাচাই করা customer review দেখান। ভুয়া countdown, বানানো scarcity বা অনুমতি ছাড়া customer তথ্য ব্যবহার করবেন না। review প্রকাশ করলে সেটি বাস্তব ক্রেতার মতামত হওয়া উচিত।',
+                'body_en' => 'Show working contact details, secure payment options, real customer support, and authentic customer reviews. Avoid fake countdowns, invented scarcity, or using customer information without permission. Published reviews should reflect real buyers’ opinions.',
+            ],
+            [
+                'heading_bn' => '৫. কোন পরিবর্তন কাজে দিচ্ছে তা মাপুন',
+                'heading_en' => '5. Measure which changes help',
+                'body_bn' => 'Analytics-এ product view, add-to-cart, checkout শুরু এবং purchase-এর মতো event track করুন। কোন source থেকে visitor আসছে এবং কোন ধাপে বাদ যাচ্ছেন তা দেখুন। একবারে একটি পরিবর্তন পরীক্ষা করুন; traffic বা sales বাড়বে—এমন নিশ্চয়তা ধরে নেবেন না।',
+                'body_en' => 'Track events such as product views, add-to-cart, checkout starts, and purchases. Review traffic sources and where people leave the process. Test one change at a time and do not assume that traffic or sales increases are guaranteed.',
+            ],
+        ],
+        'sources' => [
+            ['label' => 'Google Analytics: Ecommerce measurement', 'url' => 'https://developers.google.com/analytics/devguides/collection/ga4/ecommerce'],
+            ['label' => 'Google Search Central: Product structured data', 'url' => 'https://developers.google.com/search/docs/appearance/structured-data/product'],
+        ],
+    ],];
 
 return $posts + require __DIR__ . '/jewellery-blog-data.php';
