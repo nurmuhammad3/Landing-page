@@ -123,6 +123,7 @@ if ($path === '/sitemap.xml') {
         '/blog/local-seo-bangladesh-small-business',
         '/blog/lead-generation-small-business-bangladesh',
         '/blog/ecommerce-product-page-guide-bangladesh',
+        '/blog/marketing-kpi-guide-small-business-bangladesh',
         '/blog/jewellery-digital-marketing-bangladesh',
         '/blog/bangladesh-jewellery-marketing-opportunities',
     ];

@@ -538,4 +538,4 @@ SVG,
         ],
     ],];
 
-return $posts + require __DIR__ . '/jewellery-blog-data.php';
+return $posts + require __DIR__ . '/jewellery-blog-data.php' + require __DIR__ . '/analytics-blog-data.php';
